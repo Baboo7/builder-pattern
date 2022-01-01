@@ -1,11 +1,11 @@
 {
   "name": "builder-pattern",
   "version": "1.0.0",
-  "description": "A Typescript implementation of the Builder Pattern",
+  "description": "Implementation of the Builder Pattern for both Javascript/Typescript and compatible with ES5/ES6 classes",
   "author": "Baboo7",
   "license": "MIT",
   "repository": "Baboo7/builder-pattern",
-  "homepage": "https://github.com/Baboo7/builder-pattern",
+  "homepage": "https://github.com/Baboo7/builder-pattern#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
@@ -30,16 +30,14 @@
     "typescript": "^4.1"
   },
   "files": [
-    "LICENSE",
-    "README.md",
-    "index.js",
-    "dist/"
+    "/dist"
   ],
   "scripts": {
     "build": "tsc",
     "test": "jest --watchAll",
     "dev": "nodemon --watch 'lib/**/*.ts' --exec 'ts-node' lib/index.ts",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "rm -rf dist && npm run build"
   }
 }
