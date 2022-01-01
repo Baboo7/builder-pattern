@@ -34,7 +34,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "jest --watchAll",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "dev": "nodemon --watch 'lib/**/*.ts' --exec 'ts-node' lib/index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
