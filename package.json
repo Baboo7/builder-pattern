@@ -1,11 +1,11 @@
 {
-  "name": "builder-pattern",
+  "name": "builder-pattern-2",
   "version": "1.0.0",
   "description": "Implementation of the Builder Pattern for both Javascript/Typescript and compatible with ES5/ES6 classes",
   "author": "Baboo7",
   "license": "MIT",
-  "repository": "Baboo7/builder-pattern",
-  "homepage": "https://github.com/Baboo7/builder-pattern#readme",
+  "repository": "Baboo7/builder-pattern-2",
+  "homepage": "https://github.com/Baboo7/builder-pattern-2#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [

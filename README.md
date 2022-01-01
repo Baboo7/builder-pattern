@@ -1,3 +1,5 @@
+# builder-pattern-2
+
 Implementation of the [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern) for both Javascript/Typescript and compatible with ES5/ES6 classes.
 
 ## Why This Library?
@@ -13,13 +15,13 @@ To learn more about this library, see the section [Articles](#articles).
 Install the package using `npm`
 
 ```bash
-npm i builder-pattern
+npm i builder-pattern-2
 ```
 
 or `yarn`
 
 ```bash
-yarn add builder-pattern
+yarn add builder-pattern-2
 ```
 
 ## Features
@@ -38,7 +40,7 @@ Its setters are based on the parameter names of the constructor of the class. Fo
 ### Typescript Example
 
 ```typescript
-import { Builder, createBuilderClass } from 'builder-pattern';
+import { Builder, createBuilderClass } from 'builder-pattern-2';
 
 /**
  * 1. Create your domain model.
@@ -56,7 +58,7 @@ class MrMeeseeks {
 }
 
 /**
- * 2. (If using typescript) Describe its constructor parameters.
+ * 2. Describe its constructor parameters.
  */
 interface MrMeeseeksCtor {
   goal: string;
@@ -82,7 +84,7 @@ console.log(mr.getLifespan()); // 12
 ### Javascript ES5 Example
 
 ```typescript
-const { createBuilderClass } = require('builder-pattern');
+const { createBuilderClass } = require('builder-pattern-2');
 
 /**
  * 1. Create your domain model.
